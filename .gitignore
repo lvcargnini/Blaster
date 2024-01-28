@@ -86,3 +86,5 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Content/LearningKit_Games/*
+Content/Assets/*
