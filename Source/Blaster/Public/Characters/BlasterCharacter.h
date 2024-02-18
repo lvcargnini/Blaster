@@ -58,6 +58,10 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* AimAction;
 
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* FireAction;
+
 	/////
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UWidgetComponent* OverheadWidget;
@@ -82,6 +86,8 @@ private:
 	ETurningInPlace TurningInPlace;
 	void TurnInPlace(float DeltaTime);
 
+	UPROPERTY(EditAnywhere, Category = Combat)
+	class UAnimMontage* FireWeaponMontage;
 
 protected:
 	
@@ -102,6 +108,9 @@ protected:
 	void AimButtonPressed(const FInputActionValue& Value);
 	void AimButtonReleased(const FInputActionValue& Value);
 	
+	void FireButtonPressed(const FInputActionValue& Value);
+	void FireButtonReleased(const FInputActionValue& Value);
+
 	void AimOffset(float DeltaTime);
 	virtual void Jump() override;
 
@@ -141,5 +150,6 @@ public:
 	virtual void PostInitializeComponents() override;
 	FORCEINLINE ETurningInPlace GetTurningInPlace() const { return TurningInPlace; }
 
+	void PlayFireMontage(bool bAiming);
 
 };
