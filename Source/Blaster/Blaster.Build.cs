@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
+using UnrealBuildTool.Rules;
 
 public class Blaster : ModuleRules
 {
@@ -19,11 +20,12 @@ public class Blaster : ModuleRules
                 "GeometryCollectionEngine",
                 "Niagara",
                 "UMG",
-                "AIModule"
+                "AIModule",
+                "OnlineSubsystemUtils"
             }
         );
 
-        PrivateDependencyModuleNames.AddRange(new string[] {  });
+        PrivateDependencyModuleNames.AddRange(new string[] { "OnlineSubsystem" });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
