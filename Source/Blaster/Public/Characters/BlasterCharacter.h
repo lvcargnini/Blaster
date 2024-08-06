@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Blaster/BlasterTypes/TurningInPlace.h"
+#include "Interfaces/InteractWithCrosshairsInterface.h"
+#include "Components/TimelineComponent.h"
 #include "BlasterCharacter.generated.h"
 
 class USpringArmComponent;
@@ -17,7 +19,7 @@ class UWidgetComponent;
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
 UCLASS(config = Game)
-class BLASTER_API ABlasterCharacter : public ACharacter
+class BLASTER_API ABlasterCharacter : public ACharacter, public IInteractWithCrosshairsInterface
 {
 	GENERATED_BODY()
 private:
@@ -35,6 +37,7 @@ private:
 	/** MappingContext */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputMappingContext* DefaultMappingContext;
+
 
 	/** Jump Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
@@ -69,6 +72,119 @@ private:
 	UPROPERTY(ReplicatedUsing = OnRep_OverlappingWeapon)
 	class AWeapon* OverlappingWeapon;
 
+
+	UPROPERTY(EditAnywhere)
+	float CameraThreshold = 200.f;
+
+
+
+	bool bRotateRootBone;
+	float TurnThreshold = 0.5f;
+	FRotator ProxyRotationLastFrame;
+	FRotator ProxyRotation;
+	float ProxyYaw;
+	float TimeSinceLastMovementReplication;
+	void CrouchButtonPressed();
+	//void AimButtonPressed();
+	//void AimButtonReleased();
+	float CalculateSpeed();
+
+	/**
+	* Player health
+	*/
+
+	UPROPERTY(EditAnywhere, Category = "Player Stats")
+	float MaxHealth = 100.f;
+
+	UPROPERTY(ReplicatedUsing = OnRep_Health, VisibleAnywhere, Category = "Player Stats")
+	float Health = 100.f;
+
+	UFUNCTION()
+	void OnRep_Health();
+
+protected:
+	
+
+	// To add mapping context
+	virtual void BeginPlay();
+
+	/** Called for movement input */
+	void Move(const FInputActionValue& Value);
+
+	/** Called for looking input */
+	void Look(const FInputActionValue& Value);
+	void Turn(float Value);
+	//void EquipButtonPressed();
+	void EquipButtonPressed(const FInputActionValue& Value);
+
+	void StartCrouch(const FInputActionValue& Value);
+	void StopCrouch(const FInputActionValue& Value);
+
+	void AimButtonPressed(const FInputActionValue& Value);
+	void AimButtonReleased(const FInputActionValue& Value);
+	
+	void FireButtonPressed(const FInputActionValue& Value);
+	void FireButtonReleased(const FInputActionValue& Value);
+	
+	void CalculateAO_Pitch();
+	void SimProxiesTurn();
+
+	void AimOffset(float DeltaTime);
+	virtual void Jump() override;
+
+	//void FireButtonPressed();
+
+	//void FireButtonReleased();
+
+	bool bElimmed = false;
+
+	FTimerHandle ElimTimer;
+
+	UPROPERTY(EditDefaultsOnly)
+	float ElimDelay = 3.f;
+
+	void ElimTimerFinished();
+
+	/**
+	* Dissolve effect
+	*/
+
+	UPROPERTY(VisibleAnywhere)
+	UTimelineComponent* DissolveTimeline;
+	FOnTimelineFloat DissolveTrack;
+
+	UPROPERTY(EditAnywhere)
+	UCurveFloat* DissolveCurve;
+
+	UFUNCTION()
+	void UpdateDissolveMaterial(float DissolveValue);
+	void StartDissolve();
+
+	// Dynamic instance that we can change at runtime
+	UPROPERTY(VisibleAnywhere, Category = Elim)
+	UMaterialInstanceDynamic* DynamicDissolveMaterialInstance;
+
+	// Material instance set on the Blueprint, used with the dynamic material instance
+	UPROPERTY(EditAnywhere, Category = Elim)
+	UMaterialInstance* DissolveMaterialInstance;
+
+	/**
+	* Elim bot
+	*/
+
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* ElimBotEffect;
+
+	UPROPERTY(VisibleAnywhere)
+	UParticleSystemComponent* ElimBotComponent;
+
+	UPROPERTY(EditAnywhere)
+	class USoundCue* ElimBotSound;
+
+	UPROPERTY()
+	class ABlasterPlayerController* BlasterPlayerController;
+
+
 	UFUNCTION()
 	void OnRep_OverlappingWeapon(AWeapon* LastWeapon);
 
@@ -89,32 +205,17 @@ private:
 	UPROPERTY(EditAnywhere, Category = Combat)
 	class UAnimMontage* FireWeaponMontage;
 
-protected:
-	
+	UPROPERTY(EditAnywhere, Category = Combat)
+	UAnimMontage* HitReactMontage;
 
-	// To add mapping context
-	virtual void BeginPlay();
-
-	/** Called for movement input */
-	void Move(const FInputActionValue& Value);
-
-	/** Called for looking input */
-	void Look(const FInputActionValue& Value);
-	void EquipButtonPressed(const FInputActionValue& Value);
-
-	void StartCrouch(const FInputActionValue& Value);
-	void StopCrouch(const FInputActionValue& Value);
-
-	void AimButtonPressed(const FInputActionValue& Value);
-	void AimButtonReleased(const FInputActionValue& Value);
-	
-	void FireButtonPressed(const FInputActionValue& Value);
-	void FireButtonReleased(const FInputActionValue& Value);
-
-	void AimOffset(float DeltaTime);
-	virtual void Jump() override;
+	UPROPERTY(EditAnywhere, Category = Combat)
+	UAnimMontage* ElimMontage;
 
 
+	void HideCameraIfCharacterClose();
+
+	//Poll for any relevant classes and initialize our HUD
+	void PollInit();
 
 	//void ServerEquipButtonPressed_Implementation();// const FInputActionValue& Value);
 
@@ -142,6 +243,12 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+	FORCEINLINE bool ShouldRotateRootBone() const { return bRotateRootBone; }
+	FORCEINLINE bool IsElimmed() const { return bElimmed; }
+	FORCEINLINE float GetHealth() const { return Health; }
+	FORCEINLINE float GetMaxHealth() const { return MaxHealth; }
+
+
 	FORCEINLINE float GetAO_Yaw() const { return AO_Yaw; }
 	FORCEINLINE float GetAO_Pitch() const { return AO_Pitch; }
 	AWeapon* GetEquippedWeapon();
@@ -151,5 +258,31 @@ public:
 	FORCEINLINE ETurningInPlace GetTurningInPlace() const { return TurningInPlace; }
 
 	void PlayFireMontage(bool bAiming);
+	void PlayHitReactMontage();
+	void PlayElimMontage();
+
+	UFUNCTION()
+	void ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* InstigatorController, AActor* DamageCauser);
+	void UpdateHUDHealth();
+
+	/*UFUNCTION(NetMulticast, Unreliable)
+	void MulticastHit();*/
+
+	virtual void OnRep_ReplicatedMovement() override;
+
+	
+	void Elim();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void MulticastElim();
+	virtual void Destroyed() override;
+
+	FVector GetHitTarget() const;
+
+	UPROPERTY()
+	class ABlasterPlayerState* BlasterPlayerState;
+
+
+	//FORCEINLINE UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 };
