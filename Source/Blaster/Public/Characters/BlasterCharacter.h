@@ -65,6 +65,9 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* FireAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* ReloadAction;
+
 	/////
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UWidgetComponent* OverheadWidget;
@@ -131,6 +134,9 @@ protected:
 
 	void AimOffset(float DeltaTime);
 	virtual void Jump() override;
+	
+	void ReloadButtonPressed(const FInputActionValue& Value);
+	//void ReloadButtonPressed();
 
 	//void FireButtonPressed();
 
@@ -182,6 +188,9 @@ protected:
 	class USoundCue* ElimBotSound;
 
 	UPROPERTY()
+	class ABlasterPlayerState* BlasterPlayerState;
+
+	UPROPERTY()
 	class ABlasterPlayerController* BlasterPlayerController;
 
 
@@ -204,6 +213,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category = Combat)
 	class UAnimMontage* FireWeaponMontage;
+
+	UPROPERTY(EditAnywhere, Category = Combat)
+	UAnimMontage* ReloadMontage;
 
 	UPROPERTY(EditAnywhere, Category = Combat)
 	UAnimMontage* HitReactMontage;
@@ -258,6 +270,7 @@ public:
 	FORCEINLINE ETurningInPlace GetTurningInPlace() const { return TurningInPlace; }
 
 	void PlayFireMontage(bool bAiming);
+	void PlayReloadMontage();
 	void PlayHitReactMontage();
 	void PlayElimMontage();
 
@@ -279,8 +292,7 @@ public:
 
 	FVector GetHitTarget() const;
 
-	UPROPERTY()
-	class ABlasterPlayerState* BlasterPlayerState;
+	
 
 
 	//FORCEINLINE UCameraComponent* GetFollowCamera() const { return FollowCamera; }

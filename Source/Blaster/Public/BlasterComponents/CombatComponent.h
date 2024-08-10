@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "HUD/BlasterHUD.h"
+#include "Weapons/WeaponTypes.h"
 #include "CombatComponent.generated.h"
 
 
@@ -25,6 +26,7 @@ public:
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; 
 
 	void EquipWeapon(class AWeapon* WeaponToEquip);
+	void Reload();
 
 private:
 	UPROPERTY()
@@ -90,6 +92,21 @@ private:
 	void StartFireTimer();
 	void FireTimerFinished();
 
+	bool CanFire();
+	// Carried ammo for the currently-equipped weapon
+	UPROPERTY(ReplicatedUsing = OnRep_CarriedAmmo)
+	int32 CarriedAmmo;
+
+	UFUNCTION()
+	void OnRep_CarriedAmmo();
+
+	TMap<EWeaponType, int32> CarriedAmmoMap;
+
+	UPROPERTY(EditAnywhere)
+	int32 StartingARAmmo = 30;
+
+	void InitializeCarriedAmmo();
+
 
 protected:
 	// Called when the game starts
@@ -118,5 +135,6 @@ protected:
 
 	void SetHUDCrosshairs(float DeltaTime);
 
-		
+	UFUNCTION(Server, Reliable)
+	void ServerReload();
 };
