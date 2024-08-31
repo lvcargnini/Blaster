@@ -7,6 +7,7 @@
 #include "Blaster/BlasterTypes/TurningInPlace.h"
 #include "Interfaces/InteractWithCrosshairsInterface.h"
 #include "Components/TimelineComponent.h"
+#include "Blaster/BlasterTypes/CombatState.h"
 #include "BlasterCharacter.generated.h"
 
 class USpringArmComponent;
@@ -197,7 +198,7 @@ protected:
 	UFUNCTION()
 	void OnRep_OverlappingWeapon(AWeapon* LastWeapon);
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UCombatComponent* Combat;
 
 	UFUNCTION(Server, Reliable)
@@ -210,6 +211,9 @@ protected:
 
 	ETurningInPlace TurningInPlace;
 	void TurnInPlace(float DeltaTime);
+	/**
+	*	Animation Montages
+	*/
 
 	UPROPERTY(EditAnywhere, Category = Combat)
 	class UAnimMontage* FireWeaponMontage;
@@ -250,19 +254,6 @@ public:
 	bool IsAiming();
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
-	/** Returns CameraBoom subobject **/
-	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
-	/** Returns FollowCamera subobject **/
-	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
-
-	FORCEINLINE bool ShouldRotateRootBone() const { return bRotateRootBone; }
-	FORCEINLINE bool IsElimmed() const { return bElimmed; }
-	FORCEINLINE float GetHealth() const { return Health; }
-	FORCEINLINE float GetMaxHealth() const { return MaxHealth; }
-
-
-	FORCEINLINE float GetAO_Yaw() const { return AO_Yaw; }
-	FORCEINLINE float GetAO_Pitch() const { return AO_Pitch; }
 	AWeapon* GetEquippedWeapon();
 
 
@@ -292,7 +283,20 @@ public:
 
 	FVector GetHitTarget() const;
 
-	
+	/** Returns CameraBoom subobject **/
+	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+	/** Returns FollowCamera subobject **/
+	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	FORCEINLINE float GetAO_Yaw() const { return AO_Yaw; }
+	FORCEINLINE float GetAO_Pitch() const { return AO_Pitch; }
+
+	FORCEINLINE bool ShouldRotateRootBone() const { return bRotateRootBone; }
+	FORCEINLINE bool IsElimmed() const { return bElimmed; }
+	FORCEINLINE float GetHealth() const { return Health; }
+	FORCEINLINE float GetMaxHealth() const { return MaxHealth; }
+	ECombatState GetCombatState() const;
+
 
 
 	//FORCEINLINE UCameraComponent* GetFollowCamera() const { return FollowCamera; }

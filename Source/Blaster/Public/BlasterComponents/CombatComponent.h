@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "HUD/BlasterHUD.h"
 #include "Weapons/WeaponTypes.h"
+#include "Blaster/BlasterTypes/CombatState.h"
 #include "CombatComponent.generated.h"
 
 
@@ -27,6 +28,8 @@ public:
 
 	void EquipWeapon(class AWeapon* WeaponToEquip);
 	void Reload();
+	UFUNCTION(BlueprintCallable)
+	void FinishReloading();
 
 private:
 	UPROPERTY()
@@ -107,6 +110,14 @@ private:
 
 	void InitializeCarriedAmmo();
 
+	UPROPERTY(ReplicatedUsing = OnRep_CombatState)
+	ECombatState CombatState = ECombatState::ECS_Unoccupied;
+
+	UFUNCTION()
+	void OnRep_CombatState();
+
+	void UpdateAmmoValues();
+
 
 protected:
 	// Called when the game starts
@@ -137,4 +148,7 @@ protected:
 
 	UFUNCTION(Server, Reliable)
 	void ServerReload();
+
+	void HandleReload();
+	int32 AmountToReload();
 };
