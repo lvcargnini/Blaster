@@ -16,10 +16,9 @@ public class Blaster : ModuleRules
                 "Engine",
                 "InputCore",
                 "EnhancedInput",
-                "HairStrandsCore",
-                "HairStrands",
                 "GeometryCollectionEngine",
                 "Niagara",
+                "HairStrandsCore",
                 "UMG",
                 "AIModule",
                 "OnlineSubsystemUtils"
