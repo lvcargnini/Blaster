@@ -31,6 +31,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void FinishReloading();
 
+	void FireButtonPressed(bool bPressed);
+
 private:
 	UPROPERTY()
 	class ABlasterCharacter* Character;
@@ -129,9 +131,6 @@ protected:
 
 	UFUNCTION()
 	void OnRep_EquippedWeapon();
-
-
-	void FireButtonPressed(bool bPressed);
 
 	void Fire();
 
