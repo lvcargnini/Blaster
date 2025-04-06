@@ -12,7 +12,7 @@
 
 class USpringArmComponent;
 class UCameraComponent;
-class UInputMappingContext;
+//class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
 class UWidgetComponent;
@@ -37,7 +37,8 @@ private:
 	/////// 
 	/** MappingContext */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
-	UInputMappingContext* DefaultMappingContext;
+	//TSoftObjectPtr<UInputMappingContext> DefaultMappingContext;
+	class UInputMappingContext* DefaultMappingContext;
 
 
 	/** Jump Input Action */
@@ -69,6 +70,10 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* ReloadAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* ThrowGrenadeAction;
+
+	
 	/////
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UWidgetComponent* OverheadWidget;
@@ -103,14 +108,29 @@ private:
 	UPROPERTY(ReplicatedUsing = OnRep_Health, VisibleAnywhere, Category = "Player Stats")
 	float Health = 100.f;
 
-	UFUNCTION()
-	void OnRep_Health();
 
 protected:
 	
 
 	// To add mapping context
 	virtual void BeginPlay();
+
+	UFUNCTION()
+	void OnRep_Health(float LastHealth);
+
+	/** 
+	* Player shield
+	*/
+
+	UPROPERTY(EditAnywhere, Category = "Player Stats")
+	float MaxShield = 100.f;
+
+	UPROPERTY(ReplicatedUsing = OnRep_Shield, EditAnywhere, Category = "Player Stats")
+	float Shield = 0.f;
+
+	UFUNCTION()
+	void OnRep_Shield(float LastShield);
+
 
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
@@ -142,6 +162,8 @@ protected:
 	//void FireButtonPressed();
 
 	//void FireButtonReleased();
+
+	void GrenadeButtonPressed(const FInputActionValue& Value);
 
 	bool bElimmed = false;
 
@@ -198,8 +220,18 @@ protected:
 	UFUNCTION()
 	void OnRep_OverlappingWeapon(AWeapon* LastWeapon);
 
+
+	/** 
+	 * Blaster components
+	 */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UCombatComponent* Combat;
+
+	UPROPERTY(VisibleAnywhere)
+	class UBuffComponent* Buff;
+	
+	UPROPERTY(VisibleAnywhere)
+	class ULagCompensationComponent* LagCompensation;
 
 	UFUNCTION(Server, Reliable)
 	void ServerEquipButtonPressed();
@@ -227,6 +259,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category = Combat)
 	UAnimMontage* ElimMontage;
 
+	UPROPERTY(EditAnywhere, Category = Combat)
+	UAnimMontage* ThrowGrenadeMontage;
+
 
 	void HideCameraIfCharacterClose();
 
@@ -236,6 +271,79 @@ protected:
 	//void ServerEquipButtonPressed_Implementation();// const FInputActionValue& Value);
 
 
+	/** 
+	* Grenade
+	*/
+	UPROPERTY(VisibleAnywhere,  Category = Mesh)
+	UStaticMeshComponent* AttachedGrenade;
+
+	/** 
+	* Default weapon
+	*/
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AWeapon> DefaultWeaponClass;
+
+	/** 
+	 * Hit boxes used for server-side rewind
+	 */
+ 
+	UPROPERTY(EditAnywhere)
+	class UBoxComponent* head;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* pelvis;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* spine_02;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* spine_03;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* upperarm_l;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* upperarm_r;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* lowerarm_l;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* lowerarm_r;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* hand_l;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* hand_r;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* backpack;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* blanket;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* thigh_l;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* thigh_r;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* calf_l;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* calf_r;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* foot_l;
+ 
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* foot_r;
+ 
+
+	
 public:
 	// Sets default values for this character's properties
 	ABlasterCharacter();
@@ -264,10 +372,14 @@ public:
 	void PlayReloadMontage();
 	void PlayHitReactMontage();
 	void PlayElimMontage();
+	void PlayThrowGrenadeMontage();
+	void DropOrDestroyWeapon(AWeapon* Weapon);
+	void DropOrDestroyWeapons();
+	
 
+	
 	UFUNCTION()
 	void ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* InstigatorController, AActor* DamageCauser);
-	void UpdateHUDHealth();
 
 	/*UFUNCTION(NetMulticast, Unreliable)
 	void MulticastHit();*/
@@ -284,8 +396,26 @@ public:
 	UPROPERTY(Replicated)
 	bool bDisableGameplay = false;
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void ShowSniperScopeWidget(bool bShowScope);
+
+	void UpdateHUDHealth();
+	void UpdateHUDShield();
+	void UpdateHUDAmmo();
+
+	void SpawDefaultWeapon();
+
+	UPROPERTY()
+	TMap<FName, class UBoxComponent*> HitCollisionBoxes;
+	
 	FVector GetHitTarget() const;
 
+
+	void SetupEnhancedInput_IMC();
+
+	void PossessedBy(AController* NewController) override;
+
+	
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
@@ -297,13 +427,19 @@ public:
 	FORCEINLINE bool ShouldRotateRootBone() const { return bRotateRootBone; }
 	FORCEINLINE bool IsElimmed() const { return bElimmed; }
 	FORCEINLINE float GetHealth() const { return Health; }
+	FORCEINLINE void SetHealth(float Amount) { Health = Amount; }
 	FORCEINLINE float GetMaxHealth() const { return MaxHealth; }
+	FORCEINLINE float GetShield() const { return Shield; }
+	FORCEINLINE void SetShield(float Amount) { Shield = Amount; }
+	FORCEINLINE float GetMaxShield() const { return MaxShield; }
 	ECombatState GetCombatState() const;
 	FORCEINLINE UCombatComponent* GetCombat() const { return Combat; }
 	FORCEINLINE bool GetDisableGameplay() const { return bDisableGameplay; }
-
-
+	FORCEINLINE UAnimMontage* GetReloadMontage() const { return ReloadMontage; }
+	FORCEINLINE UStaticMeshComponent* GetAttachedGrenade() const { return AttachedGrenade; }
+	FORCEINLINE UBuffComponent* GetBuff() const { return Buff; }
+	FORCEINLINE ULagCompensationComponent* GetLagCompensation() const { return LagCompensation; }
 
 	//FORCEINLINE UCameraComponent* GetFollowCamera() const { return FollowCamera; }
-
+	bool IsLocallyReloading();
 };

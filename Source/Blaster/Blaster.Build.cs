@@ -21,6 +21,8 @@ public class Blaster : ModuleRules
                 "HairStrandsCore",
                 "UMG",
                 "AIModule",
+                "OnlineSubsystem",
+                "OnlineSubsystemSteam",
                 "OnlineSubsystemUtils"
             }
         );

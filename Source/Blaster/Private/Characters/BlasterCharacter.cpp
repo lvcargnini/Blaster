@@ -1,4 +1,4 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 // Fill out your copyright notice in the Description page of Project Settings.
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 // Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "Characters/BlasterCharacter.h"
@@ -11,6 +11,7 @@
 #include "Weapons/Weapon.h"
 #include "Weapons/WeaponTypes.h"
 #include "BlasterComponents/CombatComponent.h"
+#include "BlasterComponents/BuffComponent.h"
 #include "Components/WidgetComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Kismet/KismetMathLibrary.h"
@@ -27,6 +28,8 @@
 #include "InputActionValue.h"
 #include "Net/UnrealNetwork.h"
 #include "UObject/NameTypes.h"
+#include "Components/BoxComponent.h"
+#include "BlasterComponents/LagCompensationComponent.h"
 
 
 ABlasterCharacter::ABlasterCharacter()
@@ -41,8 +44,11 @@ ABlasterCharacter::ABlasterCharacter()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
-
+	// Don't rotate when the controller rotates. Let that just affect the camera.
+	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
+	bUseControllerRotationRoll = false;
+	
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->bUseControllerDesiredRotation = true;
 	GetCharacterMovement()->bIgnoreBaseRotation = true;
@@ -52,6 +58,12 @@ ABlasterCharacter::ABlasterCharacter()
 
 	Combat = CreateDefaultSubobject<UCombatComponent>(TEXT("CombatComponent"));
 	Combat->SetIsReplicated(true);
+	
+	Buff = CreateDefaultSubobject<UBuffComponent>(TEXT("BuffComponent"));
+	Buff->SetIsReplicated(true);
+
+	LagCompensation = CreateDefaultSubobject<ULagCompensationComponent>(TEXT("LagCompensation"));
+ 
 
 	GetCharacterMovement()->NavAgentProps.bCanCrouch = true;
 	GetCapsuleComponent()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
@@ -61,13 +73,115 @@ ABlasterCharacter::ABlasterCharacter()
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 0.f, 850.f);
 
 	TurningInPlace = ETurningInPlace::ETIP_NotTurning;
-	NetUpdateFrequency = 66.f;
-	MinNetUpdateFrequency = 33.f;
+	//NetUpdateFrequency = 66.f;
+	SetNetUpdateFrequency(66.f);
+	//MinNetUpdateFrequency = 33.f;
+	SetMinNetUpdateFrequency(33.f);
 
 
 	DissolveTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("DissolveTimelineComponent"));
+	
+	AttachedGrenade = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Attached Grenade"));
+	AttachedGrenade->SetupAttachment(GetMesh(), FName("LeftGrenadeSocket"));
+	AttachedGrenade->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
 	//InputMapping = CreateDefaultSubobject<UInputMappingContext>(TEXT("OverheadWidget"));
+
+	
+ 	/** 
+ 	* Hit boxes for server-side rewind
+ 	*/
+ 
+	head = CreateDefaultSubobject<UBoxComponent>(TEXT("head"));
+ 	head->SetupAttachment(GetMesh(), FName("head"));
+ 	head->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("head"), head);
+ 
+ 	pelvis = CreateDefaultSubobject<UBoxComponent>(TEXT("pelvis"));
+ 	pelvis->SetupAttachment(GetMesh(), FName("pelvis"));
+ 	pelvis->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("pelvis"), pelvis);
+ 
+ 	spine_02 = CreateDefaultSubobject<UBoxComponent>(TEXT("spine_02"));
+ 	spine_02->SetupAttachment(GetMesh(), FName("spine_02"));
+ 	spine_02->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("spine_02"), spine_02);
+ 
+ 	spine_03 = CreateDefaultSubobject<UBoxComponent>(TEXT("spine_03"));
+ 	spine_03->SetupAttachment(GetMesh(), FName("spine_03"));
+ 	spine_03->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("spine_03"), spine_03);
+ 
+ 	upperarm_l = CreateDefaultSubobject<UBoxComponent>(TEXT("upperarm_l"));
+ 	upperarm_l->SetupAttachment(GetMesh(), FName("upperarm_l"));
+ 	upperarm_l->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("upperarm_l"), upperarm_l);
+ 
+ 	upperarm_r = CreateDefaultSubobject<UBoxComponent>(TEXT("upperarm_r"));
+ 	upperarm_r->SetupAttachment(GetMesh(), FName("upperarm_r"));
+ 	upperarm_r->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("upperarm_r"), upperarm_r);
+ 
+ 	lowerarm_l = CreateDefaultSubobject<UBoxComponent>(TEXT("lowerarm_l"));
+ 	lowerarm_l->SetupAttachment(GetMesh(), FName("lowerarm_l"));
+ 	lowerarm_l->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("lowerarm_l"), lowerarm_l);
+ 
+ 	lowerarm_r = CreateDefaultSubobject<UBoxComponent>(TEXT("lowerarm_r"));
+ 	lowerarm_r->SetupAttachment(GetMesh(), FName("lowerarm_r"));
+ 	lowerarm_r->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("lowerarm_r"), lowerarm_r);
+ 
+ 	hand_l = CreateDefaultSubobject<UBoxComponent>(TEXT("hand_l"));
+ 	hand_l->SetupAttachment(GetMesh(), FName("hand_l"));
+ 	hand_l->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("hand_l"), hand_l);
+ 
+ 	hand_r = CreateDefaultSubobject<UBoxComponent>(TEXT("hand_r"));
+ 	hand_r->SetupAttachment(GetMesh(), FName("hand_r"));
+ 	hand_r->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("hand_r"), hand_r);
+ 
+ 	blanket = CreateDefaultSubobject<UBoxComponent>(TEXT("blanket"));
+ 	blanket->SetupAttachment(GetMesh(), FName("backpack"));
+ 	blanket->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("blanket"), blanket);
+ 
+ 	backpack = CreateDefaultSubobject<UBoxComponent>(TEXT("backpack"));
+ 	backpack->SetupAttachment(GetMesh(), FName("backpack"));
+ 	backpack->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("backpack"), backpack);
+ 
+ 	thigh_l = CreateDefaultSubobject<UBoxComponent>(TEXT("thigh_l"));
+ 	thigh_l->SetupAttachment(GetMesh(), FName("thigh_l"));
+ 	thigh_l->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("thigh_l"), thigh_l);
+ 
+ 	thigh_r = CreateDefaultSubobject<UBoxComponent>(TEXT("thigh_r"));
+ 	thigh_r->SetupAttachment(GetMesh(), FName("thigh_r"));
+ 	thigh_r->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("thigh_r"), thigh_r);
+ 
+ 	calf_l = CreateDefaultSubobject<UBoxComponent>(TEXT("calf_l"));
+ 	calf_l->SetupAttachment(GetMesh(), FName("calf_l"));
+ 	calf_l->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("calf_l"), calf_l);
+ 
+ 	calf_r = CreateDefaultSubobject<UBoxComponent>(TEXT("calf_r"));
+ 	calf_r->SetupAttachment(GetMesh(), FName("calf_r"));
+ 	calf_r->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("calf_r"), calf_r);
+ 
+ 	foot_l = CreateDefaultSubobject<UBoxComponent>(TEXT("foot_l"));
+ 	foot_l->SetupAttachment(GetMesh(), FName("foot_l"));
+ 	foot_l->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("foot_l"), foot_l);
+ 
+ 	foot_r = CreateDefaultSubobject<UBoxComponent>(TEXT("foot_r"));
+ 	foot_r->SetupAttachment(GetMesh(), FName("foot_r"));
+ 	foot_r->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+ 	HitCollisionBoxes.Add(FName("foot_r"), foot_r);
+	
 }
 
 void ABlasterCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
@@ -76,6 +190,7 @@ void ABlasterCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Ou
 
 	DOREPLIFETIME_CONDITION(ABlasterCharacter, OverlappingWeapon, COND_OwnerOnly);
 	DOREPLIFETIME(ABlasterCharacter, Health);
+	DOREPLIFETIME(ABlasterCharacter, Shield);
 	DOREPLIFETIME(ABlasterCharacter, bDisableGameplay);
 }
 
@@ -88,10 +203,7 @@ void ABlasterCharacter::OnRep_ReplicatedMovement()
 
 void ABlasterCharacter::Elim()
 {
-	if (Combat && Combat->EquippedWeapon)
-	{
-		Combat->EquippedWeapon->Dropped();
-	}
+	DropOrDestroyWeapons();
 	MulticastElim();
 	GetWorldTimerManager().SetTimer(
 		ElimTimer,
@@ -99,6 +211,34 @@ void ABlasterCharacter::Elim()
 		&ABlasterCharacter::ElimTimerFinished,
 		ElimDelay
 	);
+}
+
+void ABlasterCharacter::DropOrDestroyWeapon(AWeapon* Weapon)
+{
+	if (Weapon == nullptr) return;
+	if (Weapon->bDestroyWeapon)
+	{
+		Weapon->Destroy();
+	}
+	else
+	{
+		Weapon->Dropped();
+	}
+}
+
+void ABlasterCharacter::DropOrDestroyWeapons()
+{
+	if (Combat)
+	{
+		if (Combat->EquippedWeapon)
+		{
+			DropOrDestroyWeapon(Combat->EquippedWeapon);
+		}
+		if (Combat->SecondaryWeapon)
+		{
+			DropOrDestroyWeapon(Combat->SecondaryWeapon);
+		}
+	}
 }
 
 void ABlasterCharacter::MulticastElim_Implementation()
@@ -120,7 +260,8 @@ void ABlasterCharacter::MulticastElim_Implementation()
 	StartDissolve();
 
 	// Disable character movement
-	bDisableGameplay = true;
+	//bDisableGameplay = true;
+	GetCharacterMovement()->DisableMovement();
 	if (Combat)
 	{
 		Combat->FireButtonPressed(false);
@@ -147,6 +288,15 @@ void ABlasterCharacter::MulticastElim_Implementation()
 			ElimBotSound,
 			GetActorLocation()
 		);
+	}
+	bool bHideSniperScope = IsLocallyControlled() && 
+		Combat && 
+		Combat->bAiming && 
+		Combat->EquippedWeapon && 
+		Combat->EquippedWeapon->GetWeaponType() == EWeaponType::EWT_SniperRifle;
+	if (bHideSniperScope)
+	{
+		ShowSniperScopeWidget(false);
 	}
 }
 
@@ -179,23 +329,57 @@ void ABlasterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// In your cpp...
-	if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
-	{
-		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
-		{
-			Subsystem->AddMappingContext(DefaultMappingContext, 0);
-		}
-	}
-	// Expose a mapping context as a property in your header file... UPROPERTY(EditAnywhere, Category="Input") TSoftObjectPtr<UInputMappingContext> InputMapping; // In your cpp... if (ULocalPlayer* LocalPlayer = Cast<ULocalPlayer>(Player)) { if (UEnhancedInputLocalPlayerSubsystem* InputSystem = LocalPlayer->GetSubsystem<UEnhancedInputLocalPlayerSubsystem>()) { if (!InputMapping.IsNull()) { InputSystem->AddMappingContext(InputMapping.LoadSynchronous(), Priority); } } }
-
-
+	SpawDefaultWeapon();
+	UpdateHUDAmmo();
 	UpdateHUDHealth();
+	UpdateHUDShield();
 	if (HasAuthority())
 	{
 		OnTakeAnyDamage.AddDynamic(this, &ABlasterCharacter::ReceiveDamage);
 	}
+	
+	if (AttachedGrenade)
+	{
+		AttachedGrenade->SetVisibility(false);
+	}
+
+	if (!HasAuthority())
+	{
+		if (APlayerController* PlayerController = Cast<APlayerController>(GetController()))
+		{
+			if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
+			{
+				Subsystem->AddMappingContext(DefaultMappingContext,0);
+			}
+		}
+	}
+	
 }
+
+void ABlasterCharacter::SetupEnhancedInput_IMC()
+{
+	BlasterPlayerController = Cast<ABlasterPlayerController>(GetController());
+
+	if (BlasterPlayerController && DefaultMappingContext)
+	{
+		UEnhancedInputLocalPlayerSubsystem* EISubsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(BlasterPlayerController->GetLocalPlayer());
+
+		if (EISubsystem) EISubsystem->AddMappingContext(DefaultMappingContext, 0);
+	}
+}
+
+void ABlasterCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+	if (APlayerController* PlayerController = Cast<APlayerController>(GetController()))
+	{
+		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
+		{
+				Subsystem->AddMappingContext(DefaultMappingContext,0);
+		}
+	}
+}
+
 
 void ABlasterCharacter::Tick(float DeltaTime)
 {
@@ -293,20 +477,35 @@ void ABlasterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 		//Fire
 		//EnhancedInputComponent->BindAction(SwitchCameraAction, ETriggerEvent::Completed, this, &ADDCharacter::SwitchCamera);
 		//EnhancedInputComponent->BindAction(FireAction, ETriggerEvent::Completed, this, &ADDCharacter::FireButtonReleased);
+		//throw Grenade
+		EnhancedInputComponent->BindAction(ThrowGrenadeAction, ETriggerEvent::Completed, this, &ABlasterCharacter::GrenadeButtonPressed);
 	}
 
 }
 
-void ABlasterCharacter::PostInitializeComponents()
-{
+void ABlasterCharacter::PostInitializeComponents() {
 	Super::PostInitializeComponents();
 	if (Combat)
 	{
 		Combat->Character = this;
 	}
+	if (Buff)
+	{
+		Buff->Character = this;
+		Buff->SetInitialSpeeds(
+			GetCharacterMovement()->MaxWalkSpeed, 
+			GetCharacterMovement()->MaxWalkSpeedCrouched);
+		Buff->SetInitialJumpVelocity(GetCharacterMovement()->JumpZVelocity);
+	}
+	if (LagCompensation)
+	{
+		LagCompensation->Character = this;
+		if (Controller)
+		{
+			LagCompensation->Controller = Cast<ABlasterPlayerController>(Controller);
+		}
+	}
 }
-
-
 
 void ABlasterCharacter::PlayFireMontage(bool bAiming)
 {
@@ -334,9 +533,27 @@ void ABlasterCharacter::PlayReloadMontage()
 
 		switch (Combat->EquippedWeapon->GetWeaponType())
 		{
-		case EWeaponType::EWT_AssaultRifle:
-			SectionName = FName("Rifle");
-			break;
+			case EWeaponType::EWT_AssaultRifle:
+				SectionName = FName("Rifle");
+				break;
+			case EWeaponType::EWT_RocketLauncher:
+				SectionName = FName("Rocketauncher");
+				break;
+			case EWeaponType::EWT_Pistol:
+				SectionName = FName("Pistol");
+				break;
+			case EWeaponType::EWT_SubmachineGun:
+				SectionName = FName("Pistol");
+				break;
+			case EWeaponType::EWT_Shotgun:
+				SectionName = FName("Shotgun");
+				break;
+			case EWeaponType::EWT_SniperRifle:
+				SectionName = FName("SniperRifle");
+				break;
+			case EWeaponType::EWT_GrenadeLauncher:
+				SectionName = FName("GrenadeLauncher");
+				break;
 		}
 
 		AnimInstance->Montage_JumpToSection(SectionName);
@@ -349,6 +566,15 @@ void ABlasterCharacter::PlayElimMontage()
 	if (AnimInstance && ElimMontage)
 	{
 		AnimInstance->Montage_Play(ElimMontage);
+	}
+}
+
+void ABlasterCharacter::PlayThrowGrenadeMontage()
+{
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance && ThrowGrenadeMontage)
+	{
+		AnimInstance->Montage_Play(ThrowGrenadeMontage);
 	}
 }
 
@@ -367,8 +593,27 @@ void ABlasterCharacter::PlayHitReactMontage()
 
 void ABlasterCharacter::ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatorController, AActor* DamageCauser)
 {
-	Health = FMath::Clamp(Health - Damage, 0.f, MaxHealth);
+	if (bElimmed) return;
+
+	float DamageToHealth = Damage;
+	if (Shield > 0.f)
+	{
+		if (Shield >= Damage)
+		{
+			Shield = FMath::Clamp(Shield - Damage, 0.f, MaxShield);
+			DamageToHealth = 0.f;
+		}
+		else
+		{
+			Shield = 0.f;
+			DamageToHealth = FMath::Clamp(DamageToHealth - Shield, 0.f, Damage);
+		}
+	}
+
+	Health = FMath::Clamp(Health - DamageToHealth, 0.f, MaxHealth);
+	
 	UpdateHUDHealth();
+	UpdateHUDShield();
 	PlayHitReactMontage();
 
 	if (Health == 0.f)
@@ -407,7 +652,8 @@ void ABlasterCharacter::Move(const FInputActionValue& Value)
 {
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
-	if (bDisableGameplay) return;
+	UE_LOG(LogTemp, Warning, TEXT("bDisableGameplay %d"), bDisableGameplay);
+	//if (bDisableGameplay) return;
 	if (Controller != nullptr)
 	{
 		// find out which way is forward
@@ -455,14 +701,7 @@ void ABlasterCharacter::EquipButtonPressed(const FInputActionValue& Value)
 	if (bDisableGameplay) return;
 	if (Combat)
 	{
-		if (HasAuthority())
-		{
-			Combat->EquipWeapon(OverlappingWeapon);
-		}
-		else
-		{
-			ServerEquipButtonPressed();
-		}
+		ServerEquipButtonPressed();
 	}
 }
 
@@ -470,7 +709,14 @@ void ABlasterCharacter::ServerEquipButtonPressed_Implementation()
 {
 	if (Combat)
 	{
-		Combat->EquipWeapon(OverlappingWeapon);
+		if (OverlappingWeapon)
+		{
+			Combat->EquipWeapon(OverlappingWeapon);
+		}
+		else if (Combat->ShouldSwapWeapons())
+		{
+			Combat->SwapWeapons();
+		}
 	}
 }
 
@@ -526,6 +772,14 @@ void ABlasterCharacter::AimButtonReleased(const FInputActionValue& Value)
 	if (Combat)
 	{
 		Combat->SetAiming(false);
+	}
+}
+
+void ABlasterCharacter::GrenadeButtonPressed(const FInputActionValue& Value)
+{
+	if (Combat)
+	{
+		Combat->ThrowGrenade();
 	}
 }
 
@@ -688,10 +942,21 @@ void ABlasterCharacter::HideCameraIfCharacterClose()
 	}
 }
 
-void ABlasterCharacter::OnRep_Health()
+void ABlasterCharacter::OnRep_Health(float LastHealth)
 {
 	UpdateHUDHealth();
-	PlayHitReactMontage();
+	if (Health < LastHealth){
+    		PlayHitReactMontage();
+	}
+}
+
+void ABlasterCharacter::OnRep_Shield(float LastShield)
+{
+	UpdateHUDShield();
+	if (Shield < LastShield)
+	{
+		PlayHitReactMontage();
+	}
 }
 
 void ABlasterCharacter::UpdateHUDHealth()
@@ -700,6 +965,40 @@ void ABlasterCharacter::UpdateHUDHealth()
 	if (BlasterPlayerController)
 	{
 		BlasterPlayerController->SetHUDHealth(Health, MaxHealth);
+	}
+}
+
+void ABlasterCharacter::UpdateHUDShield()
+{
+	BlasterPlayerController = BlasterPlayerController == nullptr ? Cast<ABlasterPlayerController>(Controller) : BlasterPlayerController;
+	if (BlasterPlayerController)
+	{
+		BlasterPlayerController->SetHUDShield(Shield, MaxShield);
+	}
+}
+
+void ABlasterCharacter::UpdateHUDAmmo()
+{
+	BlasterPlayerController = BlasterPlayerController == nullptr ? Cast<ABlasterPlayerController>(Controller) : BlasterPlayerController;
+	if (BlasterPlayerController && Combat && Combat->EquippedWeapon)
+	{
+		BlasterPlayerController->SetHUDCarriedAmmo(Combat->CarriedAmmo);
+		BlasterPlayerController->SetHUDWeaponAmmo(Combat->EquippedWeapon->GetAmmo());
+	}
+}
+
+void ABlasterCharacter::SpawDefaultWeapon() 
+{
+	ABlasterGameMode* BlasterGameMode = Cast<ABlasterGameMode>(UGameplayStatics::GetGameMode(this));
+	UWorld* World = GetWorld();
+	if (BlasterGameMode && World && !bElimmed && DefaultWeaponClass)
+	{
+		AWeapon* StartingWeapon = World->SpawnActor<AWeapon>(DefaultWeaponClass);
+		StartingWeapon->bDestroyWeapon = true;
+		if (Combat)
+		{
+			Combat->EquipWeapon(StartingWeapon);
+		}
 	}
 }
 
@@ -788,4 +1087,10 @@ ECombatState ABlasterCharacter::GetCombatState() const
 {
 	if (Combat == nullptr) return ECombatState::ECS_MAX;
 	return Combat->CombatState;
+}
+
+bool ABlasterCharacter::IsLocallyReloading()
+{
+	if (Combat == nullptr) return false;
+	return Combat->bLocallyReloading;
 }
